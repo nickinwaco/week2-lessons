@@ -89,16 +89,12 @@ document.getElementById("q7").innerHTML = "<p> things array = " + things + "</p>
 // 8. Remove the first item.
 
 things.shift();
-document.getElementById("q8").innerHTML = "<p> things array = " + things + "</p>";
-
-
-
-
+document.getElementById("q8a").innerHTML = "<p> things array = " + things + "</p>";
 
 
 // 9. Remove all items from the things array.
 
-things.splice(0,1);
+things.splice(0,5);
 document.getElementById("q9").innerHTML = "<p> things array = " + things + "</p>";
 
 
@@ -110,8 +106,8 @@ var people = ['Bill', 'Ted', 'Emily', 'Andrea', 'Doug'];
 // 10. Arrange the items alphabetically. Store this Array as orderedPeople
 
 
-
-
+people.sort();
+document.getElementById("q10").innerHTML = "<p> People array = " + people + "</p>";
 
 
 
@@ -127,16 +123,19 @@ var array4 = [
                 ["White", "Black", "Spotted", "Tri-color"]
               ]
 
+var joinarray = [array1, array2, array3];
 
-
+document.getElementById("q11").innerHTML = "<p> Joined array = " + joinarray + "</p>";
 
 
 
 
 // 12. Remove "Sparky" and "White" from the above array of arrays.
 
+joinarray[0].splice(3,1);
+joinarray[2].shift();
 
-
+document.getElementById("q12").innerHTML = "<p> Joined array = " + joinarray + "</p>";
 
 
 
@@ -147,29 +146,34 @@ var campingItems = ['tent', 'hiking boots', 'picnic table', 'corn on the cob', '
 
 // 13. Declare an array called lastItem using .pop() on the campingItems array.
 
+var lastItem = [campingItems.pop()];  ///must give it an array not a variable declaration
 
-
+document.getElementById("q13").innerHTML = "<p> Last item = " + lastItem + "</p>";
 
 
 
 // 14. Add two new items to lastItem, one at the beginning and one at the end.
 
+lastItem.unshift('first');
+lastItem.push('second');
 
+document.getElementById("q14").innerHTML = "<p> Last item = " + lastItem + "</p>";
 
 
 
 
 // 15. Add s'mores to the lastItem array.
 
-
-
+lastItem.push("s'mores");
+document.getElementById("q15").innerHTML = "<p> Last item = " + lastItem + "</p>";
 
 
 
 // 16. Create a new Array called reversedItems.
 //    The items should be the same as lastItem, only in reverse order.
 
-
+lastItem.reverse();
+document.getElementById("q16").innerHTML = "<p> Last item = " + lastItem + "</p>";
 
 
 
@@ -178,22 +182,18 @@ var campingItems = ['tent', 'hiking boots', 'picnic table', 'corn on the cob', '
 var firstArray = [12, 5, 9, 27];
 var secondArray = ['fish', 'dog'];
 
+var numberpets = [firstArray,secondArray];
 
-
+document.getElementById("q17").innerHTML = "<p> Last item = " + numberpets + "</p>";
 
 
 // 18: Try to arrange the following items from smallest to largest:
 var sortingNumbers = [2, 5, 98, 55, 77, 300];
 // If it doesn't sort as expected, explain why.
 
+sortingNumbers.sort(function(a,b){return a-b});
 
-
-
-
-
-
-
-
+document.getElementById("q18").innerHTML = "<p> Last item = " + sortingNumbers + "</p>";
 
 
 /* SANDBOX TRACK
