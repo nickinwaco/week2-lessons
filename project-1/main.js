@@ -98,7 +98,7 @@ document.getElementById("q8").innerHTML = "<p> things array = " + things + "</p>
 
 // 9. Remove all items from the things array.
 
-things.splice(0,5);
+things.splice(0,1);
 document.getElementById("q9").innerHTML = "<p> things array = " + things + "</p>";
 
 
