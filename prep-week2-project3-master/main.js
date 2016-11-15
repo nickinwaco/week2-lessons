@@ -34,19 +34,37 @@ i++;
 
 // 2. Using a loop, log numbers 22-33 within their own paragraphs.
 
+var i=0;
+
+while (i < 34) {
+     document.getElementById("q2").innerHTML += "</p>" + i +" </p> ";
+     i++;
+
+ }
 
 
 
 
 // 3. Using a similar loop, log numbers 75 to 100, only in increments of five.
+var i=75;
 
+while (i < 105) {
+     document.getElementById("q3").innerHTML += "</p>" + i +" </p> ";
+     i = i+5;
 
+ }
 
 
 
 // 4. Write a while loop that displays paragraphs of "This is how a professional loops." to the HTML page 5 times.
 
+message = "this is how a professional loops";
 
+for (i=0; i!=5; i++){
+ document.getElementById("q4").innerHTML += "</p>" + message +" </p> ";
+
+
+}
 
 
 
