@@ -74,6 +74,18 @@ for (i=0; i!=5; i++){
 //     The numbers should range from 10 to 110, in increments of 25.
 
 
+for (i=10;i<135;i=i+25){
+  document.getElementById("q5").innerHTML += "<p>At home, I have " + i + " cats.</p>";
+
+}
+  document.getElementById("q5").innerHTML += "<hr>";
+
+// document.getElementById("q5").innerHTML += "<p>While Loop:</p>";
+i=10;
+ while(i < 135){
+  document.getElementById("q5").innerHTML += "<p>At home, I have " + i + " cats.</p>";
+  i+=25;
+ }
 
 
 
@@ -82,8 +94,23 @@ for (i=0; i!=5; i++){
 //    HINT: Google 'remainder operator'
 var numArray = [2, 17, 9, 24, 8];
 
+counter = numArray.length;
+// document.getElementById("q6").innerHTML += "<p>" +  counter + "</p>";
 
+i = 0;
+while (i < counter){
+    even = numArray[i];
+   if (even%2 === 0) {
+document.getElementById("q6").innerHTML += "<p>" + even+ " = Even</p>";
+  }
+  else{
+  document.getElementById("q6").innerHTML +="<p>" + even + " = Odd</p>";
+  }
+i++;
+}
 
+// document.getElementById("q6").innerHTML += "<p>" +  even + "</p>";
+// document.getElementById("q6").innerHTML += "<p>" +  i + "</p>";
 
 
 // 7. Using the following Array, create variable called numThrees with the value [13, 23, 33, 43, 53, 63, 73]
