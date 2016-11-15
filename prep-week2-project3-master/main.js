@@ -116,6 +116,16 @@ i++;
 // 7. Using the following Array, create variable called numThrees with the value [13, 23, 33, 43, 53, 63, 73]
 var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 65, 67, 73, 75, 77];
 
+var numThrees = [];
+
+var count = numArray.length;
+
+for (i=0; i<count; i=i+3){
+
+     numThrees.push(numArray[i]);
+
+}
+  document.getElementById("q7").innerHTML +="<p>" + numThrees + " </p>";
 
 
 
@@ -132,6 +142,19 @@ var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 
 // #######
 
 
+var par1 = [];
+var sign = "#";
+
+for (i=0; i<7; i++){
+
+     par1.push(sign);
+     sign += '#';
+    document.getElementById("q8").innerHTML +="<p>" + par1[i] + " </p>";
+    //  document.getElementById("q8").innerHTML +="<p>" + par1[i] + " </p>";
+
+}
+
+
 
 
 
@@ -143,6 +166,15 @@ var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 
 // If the number is divisible by 5, print "Buzz" instead of the number.
 // If the number is divisible by both 3 and 5, print "FizzBuzz" instead of the number.
 
+var num = 0;
+var i = 0;
+var counter = 0;
+
+while (i < 101) {
+  i++;
+      if num %3 === 0 || num ||
+
+}
 
 
 
