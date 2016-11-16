@@ -166,16 +166,19 @@ for (i=0; i<7; i++){
 // If the number is divisible by 5, print "Buzz" instead of the number.
 // If the number is divisible by both 3 and 5, print "FizzBuzz" instead of the number.
 
-var num = 0;
 var i = 0;
-var counter = 0;
 
-while (i < 101) {
-  i++;
-      if num %3 === 0 || num ||
-
+for(i=0; i<101; i++){
+  if((i % 5 === 0) && (i % 3 === 0)) {
+   document.getElementById("q9").innerHTML += "<p>" + "FizzBuzz" + "</p>";
+  } else if(i % 5 === 0){
+	   document.getElementById("q9").innerHTML += "<p>" + "Buzz" + "</p>";
+  } else if (i % 3 === 0){
+	   document.getElementById("q9").innerHTML += "<p>" + "Fizz" + "</p>";
+  } else {
+	   document.getElementById("q9").innerHTML += "<p>" + i + "</p>";
+  }
 }
-
 
 
 
@@ -207,6 +210,21 @@ while (i < 101) {
 // 16. Write a conditional statement to find the largest of the numbers in the array provided.
 var largestNum = [-5, -2, -6, 0, -1]
 
+var i = 0;
+var count = largestNum.length;
+var large = 0;
+
+for (i=0; i<count; i++){
+if (largestNum[i} > large) {
+
+
+  else {
+    large = largestNum[i];
+    document.getElementById("q16").innerHTML += "<p> the largest number is:" + large + "</p>";
+  }
+
+
+}}
 
 
 
